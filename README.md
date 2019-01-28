@@ -1,3 +1,3 @@
-# hello-world
-vicky's GitHub repository ... Yay!
-Adobo, fried rice, lumpia while learning how to code. Heaven!
+# Responsive 1Pg Html
+This is done by using Flex Box and Css Grid. 
+
