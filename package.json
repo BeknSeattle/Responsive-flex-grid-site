@@ -1,0 +1,22 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "html flexbox and grid website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeknSeattle/hello-world.git"
+  },
+  "author": "Maria Victoria Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeknSeattle/hello-world/issues"
+  },
+  "homepage": "https://github.com/BeknSeattle/hello-world#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
