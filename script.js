@@ -16,7 +16,7 @@ for (const section of sections){
     const a = document.createElement('a');
     const navLi = document.createElement('li');
     a.setAttribute('href', "#" + navTitle);
-    a.append(String(navTitle));
+    a.append(navTitle);
     navLi.append(a);
     nav.append(navLi)
 }
