@@ -1,30 +1,27 @@
 // var _ = require('lodash');
-
 // var array = [1,2,3,4,5,6,7,8];
 // console.log('answer', _.without(array, 3))
 
 const boxes = document.querySelectorAll('.box');
-console.log(boxes);
 boxes.forEach(box => {
     box.classList.toggle('grow');
-    console.log(box);
 });
 
 //navigation
-const section = document.querySelectorAll('section');
-console.log(section);
-section.forEach(element => {
-    let navTitle = element.id;
-    let idTitle = [];
-    idTitle.push(navTitle)
-    console.log(idTitle);
-});
-
+const sections = document.querySelectorAll('section');
 const nav = document.querySelector('ul');
-const navLi = document.createElement('li');
-const a = document.createElement('a');
-a.setAttribute('href', "#");
-navLi.append(a);
-nav.insertAdjacentElement('afterbegin', navLi);
-console.log(nav);
-
+//populating the navigation through creation of <section>
+for (const section of sections){
+    const navTitle = String(section.id);
+    const a = document.createElement('a');
+    const navLi = document.createElement('li');
+    a.setAttribute('href', "#" + navTitle);
+    a.append(String(navTitle));
+    navLi.append(a);
+    nav.append(navLi)
+}
+//selecting the last child to push on the right side of the navigation bar
+const linknavBaby = nav.lastElementChild;
+if(linknavBaby){
+    linknavBaby.classList.add('push');
+}

@@ -38,8 +38,11 @@ h1,h2,h3,h4,h5,h6{
 li, .footer p{
   padding:1.5em;
 }
-nav a, footer a, footer p{
+nav a, footer a, footer p, footer h1{
   color:#f5f5f6;
+}
+.footer section p{
+  padding: 0;
 }
 nav a, .footer a{
   text-decoration:none;
@@ -62,7 +65,7 @@ nav a:hover, .footer a:hover{
   background-size: contain;
 }
 .code-container, header{
-  padding: 3em;
+  padding: 1em 3em;
   background-color:#d8d8d8;
   margin:0 auto;
 }
