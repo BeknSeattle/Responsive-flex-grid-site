@@ -1,12 +1,12 @@
 body{
   text-align: left;
-  padding:0;
-  font-size:15px;
-  line-height: 1.7;
   background-color:rgb(255, 255, 255);
+  font-size:15px;
   font-family: 'Open Sans', sans-serif;
   width:100%;
-  margin: 0 auto;
+  margin: 0;
+  padding:0;
+  line-height: 1.6;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Noto Serif TC', serif;
@@ -28,17 +28,8 @@ h1,h2,h3,h4,h5,h6{
   margin:0;
   padding:0;
 }
-nav a {
-  font-size: 1.2em;
-}
-/* @media only screen and (max-width:600px){
-  .main-nav, .footer{
-    font-size:.8em;
-  }
-} */
 .navigation, .footer{
   background-color: #302870;
-  width:100%;
 }
 li{
   padding:1.5em;
@@ -70,7 +61,7 @@ nav a:hover, .footer a:hover{
   background-size: contain;
 }
 .code-container, header{
-  padding: 1em 0 4em;
+  padding: 1em;
   background-color:#d8d8d8;
   margin:0 auto;
 }
@@ -78,8 +69,9 @@ nav a:hover, .footer a:hover{
   background-color: inherit;
 }
 /***CONTAINERS AND GRID***/
-.container{
-  width:70%;
+article,
+.container {
+  padding: 1em;
   margin: 0 auto;
 }
 #grid-wrapper,
@@ -87,13 +79,13 @@ footer{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
+  padding: 1.5em;
 }
 footer p {
-  padding-left: 1.5em;
   font-size: .8em;
 }
 footer .code-container {
-  padding-top: 0;
+  padding: 1em;
 }
 .middle {
   text-align: center;
@@ -109,8 +101,8 @@ footer .code-container {
     grid-template-columns: repeat(2, 1fr);
   }
   nav a {
-  font-size: 1.1em;
-}
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width:1400px){
   .container{
