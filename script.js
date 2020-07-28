@@ -20,8 +20,12 @@ for (const section of sections){
     navLi.append(a);
     nav.append(navLi)
 }
-//selecting the last child to push on the right side of the navigation bar
+//selecting the last child to push on the right side of the navigation bar when the browser size is larger than 900 px only
 const linknavBaby = nav.lastElementChild;
-if(linknavBaby){
-    linknavBaby.classList.add('push');
-}
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 900){
+        linknavBaby.classList.add('push');
+    }else {
+        linknavBaby.classList.remove('push');
+    }
+})
