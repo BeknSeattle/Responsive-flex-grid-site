@@ -23,9 +23,13 @@ for (const section of sections){
 //selecting the last child to push on the right side of the navigation bar when the browser size is larger than 900 px only
 const linknavBaby = nav.lastElementChild;
 window.addEventListener('resize', () => {
-    if(window.innerWidth > 900){
+    if(window.innerWidth > 600){
         linknavBaby.classList.add('push');
-    }else {
+        nav.classList.add('main-nav');
+        nav.classList.remove('mobile');
+    }else if(window.innerWidth < 600) {
+        nav.classList.remove('main-nav');
+        nav.classList.add('mobile');
         linknavBaby.classList.remove('push');
     }
-})
+});
