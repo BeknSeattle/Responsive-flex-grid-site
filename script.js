@@ -2,6 +2,8 @@
 // var array = [1,2,3,4,5,6,7,8];
 // console.log('answer', _.without(array, 3))
 
+
+const timeIn = performance.now();
 const boxes = document.querySelectorAll('.box');
 boxes.forEach(box => {
     box.classList.toggle('grow');
@@ -12,9 +14,9 @@ const sections = document.querySelectorAll('section');
 const nav = document.querySelector('ul');
 //populating the navigation through creation of <section>
 for (const section of sections){
-    const navTitle = String(section.id);
+    const navTitle = section.id;
     const a = document.createElement('a');
-    const navLi = document.createElement('li');
+    let navLi = document.createElement('li');
     a.setAttribute('href', "#" + navTitle);
     a.append(navTitle);
     navLi.append(a);
@@ -33,3 +35,5 @@ window.addEventListener('resize', () => {
         linknavBaby.classList.remove('push');
     }
 });
+const timeOut = performance.now();
+console.log('this app took ' + (timeOut - timeIn) + ' milliseconds.');

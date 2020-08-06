@@ -7,6 +7,7 @@ body{
   margin: 0 auto;
   padding:0;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: xx-large;
@@ -93,9 +94,19 @@ nav a:hover, .footer a:hover{
 }
 .code-container,
 header {
-  padding: 1em;
   background-color:#d8d8d8;
   margin:0 auto;
+}
+header {
+  padding: .5em;
+}
+.code-container {
+  padding: .5em;
+}
+.code-container__note,
+.footer__middle {
+  font-size: .9em;
+  text-align: center;
 }
 .hero {
   background-color: inherit;
@@ -117,14 +128,8 @@ footer p {
   font-size: .9em;
   line-height: 1.7;
 }
-footer p + p {
-  margin: 0;
-}
 footer .code-container {
   padding: 1em;
-}
-.middle {
-  text-align: center;
 }
 .box > img {
   width:100%;
@@ -144,6 +149,12 @@ footer .code-container {
   }
   nav a {
     font-size: 1em;
+  }
+  header {
+  padding: 1em;
+  }
+  .code-container {
+  padding: 3em 0;
   }
 }
 @media only screen and (min-width:1400px){
